@@ -13,3 +13,13 @@ Content-Type: application/json
     "gender": "Male"
 }
 
+###
+PATCH  http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "alfarisi",
+    "email": "alfarisi@gmail.com",
+    "gender": "Male"
+}
+

@@ -30,3 +30,29 @@ export const getUsers = async(req, res) =>{
         console.log(error.message);
     }
  }
+
+ export const updateUser = async(req, res) =>{
+    try {
+        await User.update(req.body,{
+            where:{
+                id:req.params.id
+            }
+        });
+        res.status(201).json({msg: "User atos diupdate"});
+    } catch (error) {
+        console.log(error.message);
+    }
+ }
+
+ export const deleteUser = async(req, res) =>{
+    try {
+        await User.destroy({
+            where:{
+                id:req.params.id
+            }
+        });
+        res.status(201).json({msg: "User atos dihapus"});
+    } catch (error) {
+        console.log(error.message);
+    }
+ }
