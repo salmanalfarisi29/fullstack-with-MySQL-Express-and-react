@@ -2,16 +2,16 @@ import React from 'react'
 
 const UserList = () => {
   return (
-    <div className="columns mt-5 is-centered">
-        <div className="column is-half"></div>
-        <table>
+    <div className='columns mt-5 is-centered'>
+        <div className='column is-half'></div>
+        <table className='table is-stripped is-fullwidth'>
             <thead>
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <body>
